@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    tools:showIn="@layout/activity_detail_movie"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:foreground="?android:attr/selectableItemBackgroundBorderless"
+>
+<android.support.v4.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/nest"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    tools:showIn="@layout/activity_detail_movie"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:foreground="?android:attr/selectableItemBackgroundBorderless"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.gms.ads.NativeExpressAdView
+            android:layout_centerHorizontal="true"
+
+            android:visibility="gone"
+            android:id="@+id/adView_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="360x132"
+            ads:adUnitId="@string/native_ad_id"     >
+        </com.google.android.gms.ads.NativeExpressAdView>
+
+        <RelativeLayout
+            android:layout_below="@+id/adView_top"
+            android:id="@+id/rel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="7dp">
+        <TextView
+            android:id="@+id/movie_title_text"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#ffff"
+            android:padding="2dp"
+            android:paddingStart="7dp"
+            android:paddingEnd="7dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:paddingStart="7dp"
+            android:paddingEnd="7dp"
+            android:textColor="#ffff"
+            android:id="@+id/movie_timing_text"
+            android:padding="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/lang_text"
+            android:padding="2dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="7dp"
+            android:paddingEnd="7dp"
+            android:textColor="#ffff"
+            />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="78dp"
+        android:layout_alignParentEnd="true"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="65dp"
+        android:src="@drawable/imdb_icon"/>
+    <TextView
+
+        android:textColor="#ffff"
+        android:id="@+id/rating_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true"
+        android:padding="30dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+
+        android:layout_alignParentTop="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_below="@+id/rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+
+
+            >
+
+            <Button
+                android:id="@+id/btn_480p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="@string/_480p"
+                android:layout_alignParentStart="true"
+                android:textColor="#ffff"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:background="@color/colorPrimary"
+                android:foreground="@drawable/profile_image_stroke"
+                android:textAlignment="center"
+
+                />
+
+            <Button
+                android:id="@+id/btn_720p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_720p"
+                android:textSize="12sp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="#ffff"
+                android:background="@color/colorPrimary"
+                android:foreground="@drawable/profile_image_stroke"
+                android:textAlignment="center"
+                />
+            <Button
+                android:id="@+id/btn_1080p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_1080p"
+                android:textSize="12sp"
+                android:layout_alignParentEnd="true"
+                android:textStyle="bold"
+                android:textColor="#ffff"
+                android:background="@color/colorPrimary"
+                android:foreground="@drawable/profile_image_stroke"
+                android:textAlignment="center"
+                />
+
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:lineSpacingExtra="4dp"
+        android:id="@+id/movie_descripition"
+        android:padding="12dp"
+        android:layout_below="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+            android:textSize="15sp"
+            android:textAlignment="center"
+        />
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_below="@+id/movie_descripition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/star_cast"
+            android:padding="5dp"
+            android:textColor="#ffff"
+            android:text="@string/star_cast"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/star1"
+                android:paddingStart="20dp"
+                android:paddingEnd="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:padding="8dp"
+                android:textStyle="italic|bold"
+                android:textColor="#ffff" />
+
+            <TextView
+                android:textStyle="italic|bold"
+
+                android:textColor="#ffff"
+                android:id="@+id/star2"
+                android:padding="8dp"
+                android:paddingStart="18dp"
+                android:paddingEnd="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>
+
+
+
+
+

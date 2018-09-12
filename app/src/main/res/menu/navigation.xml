@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/fire"
+        android:title="@string/trending"
+        android:enabled="true"
+        app:showAsAction="withText"
+        />
+
+    <item
+        android:id="@+id/navigation_tvshows"
+        android:icon="@drawable/television_classic"
+        android:title="@string/tv_shows"
+        android:enabled="true"
+        app:showAsAction="withText"
+        />
+
+    <item
+        android:id="@+id/navigation_movies"
+        android:icon="@drawable/movie_roll"
+        android:title="@string/movies"
+        app:showAsAction="withText"
+
+        android:enabled="true"/>
+
+        <!--
+        android:id="@+id/navigation_youtube"
+        android:icon="@drawable/youtube_play"
+        android:title="@string/youtube"
+        android:enabled="true"
+        app:showAsAction="withText"  -->
+
+
+
+
+
+</menu>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:paddingEnd="25dp"
+    android:paddingStart="25dp"
+    android:paddingTop="25dp"
+    android:paddingBottom="5dp"
+
+    >
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollview1"
+    android:layout_width="match_parent"
+    android:layout_height="370dp"
+    android:background="@color/colorPrimaryDark"
+    >
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_gravity="center_horizontal">
+
+           <RadioGroup
+               android:id="@+id/sub_radio_grp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+    <RadioButton
+
+        app:buttonTint="#ffff"
+        android:tag="eng"
+        android:textAllCaps="true"
+        android:checked="true"
+        android:padding="18dp"
+        android:id="@+id/English"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textColor="#ffff"
+        android:text="@string/english"
+        android:textStyle="bold"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content" />
+
+           <RadioButton
+               android:tag="hin"
+               android:textAllCaps="true"
+               app:buttonTint="#ffff"
+
+               android:padding="18dp"
+               android:id="@+id/hindi"
+               android:textAlignment="center"
+               android:layout_gravity="center"
+               android:textColor="#ffff"
+               android:text="@string/hindi"
+               android:textStyle="bold"
+               android:layout_width="220dp"
+               android:layout_height="wrap_content" />
+
+    <RadioButton
+        android:tag="por"
+        android:textAllCaps="true"
+        app:buttonTint="#ffff"
+
+        android:padding="18dp"
+        android:id="@+id/portuguese"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textColor="#ffff"
+        android:text="@string/portuguese"
+        android:textStyle="bold"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content" />
+    <RadioButton
+        android:tag="hun"
+        android:textAllCaps="true"
+
+        app:buttonTint="#ffff"
+        android:padding="18dp"
+        android:id="@+id/hungarian"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textColor="#ffff"
+        android:text="@string/hungarian"
+        android:textStyle="bold"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content" />
+    <RadioButton
+        android:tag="ger"
+        android:textAllCaps="true"
+
+        app:buttonTint="#ffff"
+        android:padding="18dp"
+        android:id="@+id/german"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textColor="#ffff"
+        android:text="@string/german"
+        android:textStyle="bold"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content" />
+    <RadioButton
+        android:tag="lit"
+        android:textAllCaps="true"
+
+        app:buttonTint="#ffff"
+        android:padding="18dp"
+        android:id="@+id/lithuanian"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textColor="#ffff"
+        android:text="@string/lithuanian"
+        android:textStyle="bold"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content" />
+    <RadioButton
+        android:tag="pol"
+        android:textAllCaps="true"
+
+        app:buttonTint="#ffff"
+        android:padding="18dp"
+        android:id="@+id/polish"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textColor="#ffff"
+        android:text="@string/polish"
+        android:textStyle="bold"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content" />
+
+           <RadioButton
+               android:tag="hrv"
+               android:textAllCaps="true"
+               app:buttonTint="#ffff"
+
+               android:padding="18dp"
+               android:id="@+id/croatian"
+               android:textAlignment="center"
+               android:layout_gravity="center"
+               android:textColor="#ffff"
+               android:text="@string/croatian"
+               android:textStyle="bold"
+               android:layout_width="220dp"
+               android:layout_height="wrap_content" />
+
+           <RadioButton
+               android:tag="el"
+               android:textAllCaps="true"
+               app:buttonTint="#ffff"
+
+               android:padding="18dp"
+               android:id="@+id/indo"
+               android:textAlignment="center"
+               android:layout_gravity="center"
+               android:textColor="#ffff"
+               android:text="@string/indonesian"
+               android:textStyle="bold"
+               android:layout_width="220dp"
+               android:layout_height="wrap_content" />
+
+               <RadioButton
+                   android:tag="ell"
+                   android:textAllCaps="true"
+                   app:buttonTint="#ffff"
+
+                   android:padding="18dp"
+                   android:id="@+id/greek"
+                   android:textAlignment="center"
+                   android:layout_gravity="center"
+                   android:textColor="#ffff"
+                   android:text="@string/greek"
+                   android:textStyle="bold"
+                   android:layout_width="220dp"
+                   android:layout_height="wrap_content" />
+
+
+               <RadioButton
+                   android:tag="ita"
+                   android:textAllCaps="true"
+                   app:buttonTint="#ffff"
+
+                   android:padding="18dp"
+                   android:id="@+id/italian"
+                   android:textAlignment="center"
+                   android:layout_gravity="center"
+                   android:textColor="#ffff"
+                   android:text="@string/italian"
+                   android:textStyle="bold"
+                   android:layout_width="220dp"
+                   android:layout_height="wrap_content" />
+
+               <RadioButton
+                   android:tag="spa"
+                   android:textAllCaps="true"
+                   app:buttonTint="#ffff"
+
+                   android:padding="18dp"
+                   android:id="@+id/spanish"
+                   android:textAlignment="center"
+                   android:layout_gravity="center"
+                   android:textColor="#ffff"
+                   android:text="@string/spanish"
+                   android:textStyle="bold"
+                   android:layout_width="220dp"
+                   android:layout_height="wrap_content" />
+
+               <RadioButton
+                   android:tag="ara"
+                   android:textAllCaps="true"
+                   app:buttonTint="#ffff"
+
+                   android:padding="18dp"
+                   android:id="@+id/arabic"
+                   android:textAlignment="center"
+                   android:layout_gravity="center"
+                   android:textColor="#ffff"
+                   android:text="@string/arabic"
+                   android:textStyle="bold"
+                   android:layout_width="220dp"
+                   android:layout_height="wrap_content" />
+               <RadioButton
+                   android:tag="cze"
+                   android:textAllCaps="true"
+                   app:buttonTint="#ffff"
+
+                   android:padding="18dp"
+                   android:id="@+id/czech"
+                   android:textAlignment="center"
+                   android:layout_gravity="center"
+                   android:textColor="#ffff"
+                   android:text="@string/czech"
+                   android:textStyle="bold"
+                   android:layout_width="220dp"
+                   android:layout_height="wrap_content" />
+
+
+
+
+           </RadioGroup>
+       </LinearLayout>
+   </ScrollView>
+<Button
+
+    android:layout_marginTop="5dp"
+    android:id="@+id/sub_ok_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/colorAccent"
+    android:text="@string/ok"
+    android:layout_below="@+id/scrollview1"
+    android:layout_alignParentEnd="true"
+
+    android:background="@color/colorPrimaryDark"/>
+</RelativeLayout>

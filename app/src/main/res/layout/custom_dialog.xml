@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dialog_stroke"
+    android:id="@+id/custom_root"
+    android:orientation="vertical"
+    android:layerType="software"
+    >
+    <TextView
+        android:id="@+id/quality_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:layout_marginStart="10dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless">
+    <ImageButton
+        android:layout_marginStart="4dp"
+        android:contentDescription="@string/play"
+        android:id="@+id/play_btn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/play_circle_outline"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+
+        />
+    <ImageButton
+        android:contentDescription="@string/download"
+        android:id="@+id/download_btn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/arrow_down_bold_circle_outline"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+
+
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <RadioGroup
+            android:padding="2dp"
+            android:id="@+id/radiogrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:checked="true"
+                android:padding="18dp"
+                app:buttonTint="#ffff"
+                android:id="@+id/otherid"
+                android:textColor="#ffff"
+                android:text="@string/open_with"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:padding="18dp"
+                app:buttonTint="#ffff"
+                android:textColor="#ffff"
+                android:id="@+id/exoplayer_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/exoplayer" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+<Button
+    android:background="@color/colorPrimaryDark"
+    android:foreground="@drawable/dialog_stroke"
+    android:id="@+id/subtitle_btn"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:text="@string/subtitle"
+    android:textColor="#ffffff"
+    android:layout_gravity="center"
+    android:layerType="software"
+    />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="#ffff"
+        android:textAlignment="center"
+        android:lineSpacingExtra="2dp"
+        android:text="@string/note_we_recommand_you_to_use_vlc_player_if_not_then_mx_player"
+        />
+
+
+
+
+</LinearLayout>
+
+
+

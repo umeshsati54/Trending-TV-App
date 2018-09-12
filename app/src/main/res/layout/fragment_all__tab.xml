@@ -1,0 +1,92 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.asun.trendingtv.All_Tab"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+        android:layout_above="@+id/appbar1">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            >
+            <TextView
+                android:id="@+id/tootlbar_text"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffff"/>
+            <android.support.v7.widget.SearchView
+                android:id="@+id/search_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:searchIcon="@drawable/magnify"
+                android:layout_marginEnd="30dp"
+
+
+                >
+
+            </android.support.v7.widget.SearchView>
+
+        </android.support.v7.widget.Toolbar>
+
+         </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar"
+        android:background="@color/colorPrimary"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ProgressBar
+        android:id="@+id/progress_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+        <com.google.android.gms.ads.NativeExpressAdView
+
+            android:id="@+id/native_ad_id_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adUnitId="@string/native_small_ad"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            ads:adSize="360x80"
+            >
+        </com.google.android.gms.ads.NativeExpressAdView>
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/native_ad_id_recyclerview"
+            android:scrollbars="vertical"
+            android:scrollbarThumbVertical="@color/colorAccent"
+            android:scrollbarSize="5dp"
+        android:id="@+id/all_tab_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+            </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

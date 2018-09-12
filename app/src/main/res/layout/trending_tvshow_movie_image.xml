@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="270dp"
+    android:layout_height="167dp"
+    android:layout_margin="3dp"
+    app:cardCornerRadius="3dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        >
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+    <ImageView
+
+        android:contentDescription="@string/trending_tv_shows"
+        android:id="@+id/trending_tv_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:fitsSystemWindows="true"
+
+        />
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/shawdow_textview"
+            android:background="@drawable/shadow_for_textview"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

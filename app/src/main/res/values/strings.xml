@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Trending TV</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="trending_tv_shows">Trending TV Shows</string>
+    <string name="tvshow">TVSHOW</string>
+    <string name="play">contentdes</string>
+    <string name="_1080p">1080p</string>
+    <string name="_720p">720p</string>
+    <string name="_480p">480p</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="no_tv_show_is_added">NO TV SHOWS ARE ADDED</string>
+    <string name="no_movies_show_is_added">NO MOVIES ARE ADDED</string>
+    <string name="movies">Movies</string>
+    <string name="tv_shows">TV Shows</string>
+    <string name="youtube">YouTube</string>
+
+    <string name="trending_hollywood_movies">Trending Hollywood Movies</string>
+    <string name="movie">Movie</string>
+    <string name="star_cast">Star Cast</string>
+
+    <string name="native_ad_id">ca-app-pub-7968822252801553/2814657420</string>
+    <string name="native_small_ad">ca-app-pub-7968822252801553/4597285026</string>
+
+    <string name="search_hear">Search Here>>>></string>
+    <string name="download">download</string>
+    <string name="open_with">Open with…</string>
+    <string name="exoplayer">ExoPlayer</string>
+    <string name="subtitle">---subtitle---</string>
+    <string name="note_we_recommand_you_to_use_vlc_player_if_not_then_mx_player">note: we recommand you to use VLC Player, if not then MX Player</string>
+    <string name="you_re_using_old_version_of_trending_tv">You\'re using an older version of Trending TV</string>
+    <string name="to_get_the_best_experience_update_to_latest_version">To get the best experience, update to latest version</string>
+    <string name="no_thanks">no thanks</string>
+    <string name="update">Update</string>
+    <string name="desc">desc</string>
+    <string name="enter_a_movie_or_tv_show_name">Enter a movie or TV show name....</string>
+    <string name="request_this_movie">request this movie</string>
+    <string name="trending">Trending</string>
+    <string name="must_watch">Must Watch</string>
+    <string name="trending_text">Trending</string>
+    <string name="airing">Airing</string>
+    <string name="english">English</string>
+    <string name="hindi">hindi</string>
+    <string name="portuguese">portuguese</string>
+    <string name="hungarian">Hungarian</string>
+    <string name="german">german</string>
+    <string name="lithuanian">lithuanian</string>
+    <string name="polish">polish</string>
+    <string name="croatian">croatian</string>
+    <string name="indonesian">Indonesian</string>
+    <string name="greek">greek</string>
+    <string name="italian">italian</string>
+    <string name="spanish">spanish</string>
+    <string name="arabic">arabic</string>
+    <string name="czech">czech</string>
+    <string name="ok">OK</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="video_ad_id">ca-app-pub-7968822252801553/7238183821</string>
+
+
+</resources>

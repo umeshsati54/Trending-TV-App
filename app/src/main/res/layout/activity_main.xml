@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative"
+    android:background="@color/colorPrimary"
+    tools:context="com.asun.trendingtv.MainActivity">
+
+
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/frameid"
+    android:layout_above="@+id/navigation"
+    />
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:layout_alignParentBottom="true"
+        app:itemTextColor="@color/bnv_tab_item_foreground"
+        app:itemIconTint="@color/bnv_tab_item_foreground"
+        android:background="@drawable/button"
+        android:animateLayoutChanges="true"
+        app:menu="@menu/navigation"
+        />
+
+
+</RelativeLayout>

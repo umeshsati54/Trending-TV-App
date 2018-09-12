@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.asun.trendingtv.Fav_Tab"
+    android:background="@color/colorPrimary">
+
+    <ProgressBar
+        android:id="@+id/book_progress_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:id="@+id/bookmarktext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/no_tv_show_is_added"
+        android:visibility="invisible"
+        android:textColor="@color/colorAccent"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/bookmark_tab_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        app:stackFromEnd="true" />
+
+</RelativeLayout>

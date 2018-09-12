@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:padding="25dp"
+    android:foreground="@drawable/dialog_stroke"
+    android:orientation="vertical">
+
+    <ImageView
+        android:src="@drawable/account_circle"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/profile_image_dialog"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/profile_image_stroke" />
+
+
+    <TextView
+        android:id="@+id/email_textview"
+        android:textColor="#ffff"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        />
+
+
+    <EditText
+        android:id="@+id/request_edittext"
+        android:layout_marginTop="5dp"
+        android:hint="@string/enter_a_movie_or_tv_show_name"
+        android:textColorHint="#ffffff"
+        android:background="@drawable/dialog_stroke"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        />
+    <Button
+        android:id="@+id/request_btn"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/request_this_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"/>
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_gravity="center_vertical"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/red_dot"/>
+        <TextView
+            android:layout_gravity="center_vertical"
+
+            android:id="@+id/trending"
+            android:padding="7dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/trending_text"/>
+        <ImageView
+            android:layout_gravity="center_vertical"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/blue_dot"/>
+        <TextView
+
+            android:layout_gravity="center_vertical"
+
+            android:padding="7dp"
+            android:id="@+id/must_watch"
+
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/must_watch"/>
+        <ImageView
+            android:layout_gravity="center_vertical"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/green_dot"/>
+        <TextView
+
+            android:layout_gravity="center_vertical"
+
+            android:id="@+id/airing"
+            android:padding="7dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/airing"/>
+
+    </LinearLayout>
+
+</LinearLayout>

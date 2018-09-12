@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/detail_movie_rootlayout"
+    tools:context="com.asun.trendingtv.Detail_movie">
+
+
+    <RelativeLayout
+
+        android:id="@+id/deltail_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+         <ImageView
+             android:src="@drawable/placeholder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/collepImage"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                app:layout_collapseMode="parallax"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                />
+
+            <ImageView
+                android:id="@+id/image_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:padding="12dp"
+                android:src="@drawable/share_variant"/>
+
+    </RelativeLayout>
+
+
+    <include
+        android:id="@+id/con"
+        layout="@layout/detail_movie_frgment"
+
+
+        />
+
+
+</LinearLayout>

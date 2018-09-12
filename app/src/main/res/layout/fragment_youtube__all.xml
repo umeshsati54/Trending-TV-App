@@ -1,0 +1,117 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.asun.trendingtv.Youtube_All"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_youtube_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+        android:layout_above="@+id/appbar1">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_youtube_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            >
+            <android.support.v7.widget.SearchView
+                android:id="@+id/search_id_youtube_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:searchIcon="@drawable/magnify"
+                android:layout_marginEnd="30dp"
+
+                >
+
+            </android.support.v7.widget.SearchView>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar_youtube_all"
+        android:background="@color/colorPrimary"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ProgressBar
+            android:id="@+id/progress_id_youtube_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/youtube_all_tab_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </RelativeLayout>
+    <LinearLayout
+
+        android:id="@+id/video_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        >
+
+        <ImageButton
+            android:contentDescription="@string/desc"
+            android:id="@+id/close_button"
+            android:layout_width="45dp"
+            android:padding="6dp"
+            android:scaleType="centerCrop"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/chevron_double_down"
+            android:background="@drawable/btn_shape"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+
+
+            />
+
+
+
+        <fragment
+            class="com.asun.trendingtv.Youtube_All$VideoFragment"
+            android:tag="youtube_fragment"
+            android:id="@+id/unique"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <com.google.android.gms.ads.NativeExpressAdView
+
+            android:id="@+id/native_ad_id_youtube_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adUnitId="@string/native_small_ad"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            ads:adSize="360x80"
+            >
+        </com.google.android.gms.ads.NativeExpressAdView>
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
