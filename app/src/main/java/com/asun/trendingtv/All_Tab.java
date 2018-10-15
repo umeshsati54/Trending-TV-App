@@ -340,7 +340,7 @@ public class All_Tab extends Fragment
 
     public static class Tvshowholder extends RecyclerView.ViewHolder {
         View view;
-        ImageButton mLikeButton;
+        ImageButton mLikeButton ;
         ImageButton mBookmarkBtn;
         DatabaseReference mDatabaseLike;
         DatabaseReference mDatabaseBookmark;
