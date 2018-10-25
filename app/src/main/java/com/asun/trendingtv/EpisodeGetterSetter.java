@@ -32,7 +32,7 @@ public class EpisodeGetterSetter {
     }
 
     public String getEpisode_name() {
-        return episode_name;
+        return episodename;
     }
 
     public void setEpisode_name(String episode_name) {
